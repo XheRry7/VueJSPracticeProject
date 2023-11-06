@@ -1,15 +1,40 @@
 <template>
-  <div class="hello">
-    <h1>Hello World</h1>
-    <img alt="Vue logo" src="../assets/logo.png" />
+  <div class="container">
+    <div class="grid">
+      <div class="row">
+        <div class="col">
+          <h1>Home</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+            ipsam! Unde voluptas temporibus distinctio excepturi non, ipsam
+            molestias! Mollitia reprehenderit accusantium vero ut. Accusantium
+            saepe laboriosam asperiores debitis, optio molestiae?
+          </p>
+          <i class="fa fa-home text-success fa-2x" aria-hidden="true"></i>
+          <button class="btn btn-primary">My btn</button>
+        </div>
+      </div>
+    </div>
+    <AppCustomers name="Shehryar" Age="22" Description="New buyer" />
+    <EmployeeRecords />
+    <CounterApp />
+    <GreetingsVue />
   </div>
 </template>
 
 <script>
+import AppCustomers from "@/components/AppCustomers";
+import EmployeeRecords from "@/components/EmployeeRecords";
+import CounterApp from "@/components/CounterApp";
+import GreetingsVue from "./GreetingsVue";
+
 export default {
   name: "HelloWorld",
-  props: {
-    msg: String,
+  components: {
+    CounterApp,
+    GreetingsVue,
+    AppCustomers,
+    EmployeeRecords,
   },
 };
 </script>
