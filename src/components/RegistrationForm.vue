@@ -42,7 +42,6 @@ export default {
   },
   methods: {
     submitHandler: function(){
-        console.log("clicked")
       console.log("sa", this.user.name)
     }
   }

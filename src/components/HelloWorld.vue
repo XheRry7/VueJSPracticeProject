@@ -20,6 +20,7 @@
     <CounterApp />
     <GreetingsVue />
     <RegistrationForm />
+    <AuthUser />
   </div>
 </template>
 
@@ -29,6 +30,7 @@ import EmployeeRecords from "@/components/EmployeeRecords";
 import CounterApp from "@/components/CounterApp";
 import GreetingsVue from "./GreetingsVue";
 import RegistrationForm from "@/components/RegistrationForm";
+import AuthUser from "./AuthUser";
 
 export default {
   name: "HelloWorld",
@@ -38,6 +40,7 @@ export default {
     AppCustomers,
     EmployeeRecords,
     RegistrationForm,
+    AuthUser
   },
 };
 </script>
